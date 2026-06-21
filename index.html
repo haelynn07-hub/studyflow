@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 StudyFlow</h1>
+    <p class="subtitle">오늘의 공부를 체계적으로 관리하세요</p>
+
+    <div class="input-box">
+      <input type="text" id="taskInput" placeholder="오늘 할 공부 입력">
+      <button onclick="addTask()">추가</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="card">
+      <h2>⏱ 집중 타이머</h2>
+      <p id="timer">25:00</p>
+      <button onclick="startTimer()">시작</button>
+    </div>
+
+    <div class="card">
+      <h2>📈 완료율</h2>
+      <div class="progress-bar">
+        <div id="progress"></div>
+      </div>
+      <p id="progressText">0%</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
